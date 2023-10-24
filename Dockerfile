@@ -10,12 +10,6 @@ LABEL description = "Dockerfile for a custom image of Kali Linux OS"
 RUN apt-get update
 
 # Install the following packages for our custom image: nano, python3, nmap and python-pip
-# RUN apt-get install -y \
-#     nano \
-#     python3 \
-#     nmap \
-#     pip
-
 RUN apt-get update && apt-get install -y \
     nano \
     nmap \
