@@ -18,6 +18,9 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-apt
 
+# Install Jupyter
+RUN pip3 install jupyter
+
 # Set credentials for the root user, ROOT = all privileges, 21535220 = password
 ENV USER root
 ENV PASSWORD 22041278
